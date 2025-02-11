@@ -33,11 +33,11 @@ export default function Section4() {
         </div>
         <div className="left">
             <div>
-                <h1> >5,5 Млрд</h1>
+                <h1> {">"}5,5 Млрд</h1>
                 <p>Инвестиции pre-seed, seed</p>
             </div>
             <div>
-                <h1>>300</h1>
+                <h1>{">"} 300</h1>
                 <p>Акселераторов, инкубаторов</p>
             </div>
             <div>
