@@ -1,0 +1,99 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    padding: 15vh 25vh 25vh;
+    line-height: 1.5;
+}
+
+.content span {
+    background-color: #07AF91;
+    color: white;
+    font-weight: 600;
+    padding: 0.5vh;
+    border-radius: 2px;
+}
+
+.content h1 {
+    font-size: 26px;
+}
+
+.content button {
+    background: linear-gradient(#016CA8, #61B5E4);
+    color: white;
+    border: none;
+    padding: 2.5vh 4vh;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1vh;
+    transition: 0.3s;
+}
+
+.content button:hover {
+    background: linear-gradient(#014f7a, #4a9ccf);
+}
+
+.date {
+    display: none;
+}
+
+#span {
+    background-color: #fff;
+    color: #07AF91;
+}
+
+@media (max-width: 768px) {
+    .content {
+        text-align: center;
+        align-items: center;
+        padding: 30vh 5vh;
+    }
+
+    .open {
+        display: none;
+    }
+
+    .date {
+        display: block;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content button {
+        font-size: 15px;
+        padding: 2vh 3vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 20vh 3vh;
+    }
+
+    .content h1 {
+        font-size: 22px;
+    }
+
+    .content button {
+        font-size: 14px;
+        padding: 1.8vh 3vh;
+    }
+}
+
+@media (max-width: 360px) {
+    .content {
+        padding: 15vh 2vh;
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .content button {
+        font-size: 13px;
+        padding: 1.5vh 2.5vh;
+    }
+}

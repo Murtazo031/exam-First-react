@@ -1,0 +1,43 @@
+.navbar {
+    padding: 1vh 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .img {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 1vh 15vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1vh 5vh;
+    }
+
+    .navbar .pages {
+        display: none;
+    }
+
+    .navbar .img {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 1vh 3vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar {
+        padding: 1vh 2vh;
+    }
+}

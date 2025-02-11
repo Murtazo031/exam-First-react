@@ -1,0 +1,100 @@
+.sec3 {
+    background-image: url("../../app/assets/img/sec3back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.sec3 h2 {
+    background-color: #07AF91;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.sec3 p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-top: 15px;
+}
+
+.sec3 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #07AF91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec3 button:hover {
+    background-color: #059a7f;
+}
+
+@media (max-width: 768px) {
+    .sec3 {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .sec3 h2 {
+        font-size: 22px;
+        padding: 8px 16px;
+    }
+
+    .sec3 p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .sec3 button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec3 {
+        padding: 30px 15px;
+    }
+
+    .sec3 h2 {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    .sec3 p {
+        font-size: 14px;
+    }
+
+    .sec3 button {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .sec3 h2 {
+        font-size: 18px;
+    }
+
+    .sec3 p {
+        font-size: 13px;
+    }
+
+    .sec3 button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,59 @@
+.sec5 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    margin: auto;
+}
+.sec5 .sec5h2 {
+    color: #1178B2;
+}
+.sec5 .threediv {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec5 .threediv div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px lightgrey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7vh;
+    width: 23%;
+    height: 20vh;
+}
+.sec5 .threediv div h1{
+    margin: 0;
+    font-size: 74px;
+    color: #1178B2;
+}
+
+@media (max-width: 768px) {
+    .sec5 {
+        width: 90%;
+    }
+    .sec5 .threediv {
+        flex-wrap: wrap;
+        gap: 4vh;
+        justify-content: center;
+    }
+    .sec5 .threediv div {
+        width: 45%;
+        padding: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec5 .threediv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec5 .threediv div {
+        width: 80%;
+    }
+}

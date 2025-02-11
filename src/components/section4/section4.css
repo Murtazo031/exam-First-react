@@ -1,0 +1,178 @@
+.section4 {
+    width: 80%;
+    margin: auto;
+    padding: 8vh 0;
+}
+
+.sec4h2 {
+    color: #1178B2;
+    font-weight: 600;
+    text-align: center;
+}
+.region {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #EEF1F4;
+    padding: 0;
+}
+
+.region p {
+    width: 24%;
+    border-right: 1px solid #CFDDEB;
+    margin: 0;
+    padding: 2vh 3vh;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.region .bg {
+    background-color: #88BBD8;
+    color: #FFFFFF;
+}
+
+.statistic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../../app/assets/img/stsbac.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 5vh 0;
+}
+
+.right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4vh;
+}
+
+.right button {
+    background: linear-gradient(#61B5E4, #016CA8);
+    color: white;
+    border: none;
+    padding: 2.5vh 3vw;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fatima {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+
+.fatima img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh;
+}
+
+.left div {
+    background-color: white;
+    padding: 2vh 3vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 3px lightgrey;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.left .arrow {
+    background-color: #1178B2;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow img {
+    width: 25px;
+    margin-bottom: 1vh;
+}
+
+@media (max-width: 1024px) {
+    .statistic {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .region {
+        flex-direction: column;
+    }
+
+    .region p {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #CFDDEB;
+        padding: 2vh 0;
+    }
+
+    .statistic {
+        height: auto;
+        background-size: cover;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        gap: 3vh;
+    }
+
+    .fatima {
+        flex-direction: column;
+        text-align: center;
+        gap: 1vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec4h2 {
+        font-size: 22px;
+    }
+
+    .right h2 {
+        font-size: 18px;
+    }
+
+    .right button {
+        padding: 2vh 5vw;
+    }
+
+    .left div {
+        padding: 2vh;
+    }
+
+    .fatima img {
+        width: 40px;
+        height: 40px;
+    }
+}

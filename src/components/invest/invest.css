@@ -1,0 +1,79 @@
+.invest {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../app//assets//img/investback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5vh 0vh;
+    margin: 5vh 0;
+    gap: 10vh;
+}
+.invest .inright {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 35%;
+}
+.invest .inleft {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.inleft div {
+    background-color: white;
+    border-radius: 10px;
+    width: 30vh;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.inleft div img {
+    width: 60%;
+    height: 60%;
+}
+.inright button {
+    background-color: #07AF91;
+    color: white;
+    border: none;
+    padding: 3vh 5vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .invest {
+        flex-direction: column;
+        text-align: center;
+        gap: 5vh;
+        padding: 5vh;
+    }
+    .invest .inright {
+        width: 80%;
+        align-items: center;
+    }
+    .invest .inleft {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .inleft div {
+        width: 25vh;
+        height: 12vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .invest .inleft {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .inleft div {
+        width: 20vh;
+        height: 5vh;
+    }
+}

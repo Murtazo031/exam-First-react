@@ -1,0 +1,63 @@
+.price {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.price .gridprice {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 20px;
+}
+
+.price .gridprice .div {
+    box-shadow: 0px 0px 5px lightgrey;
+    border-radius: 8px;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+}
+
+.price .gridprice .div h3 {
+    color: #333;
+    font-size: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px 0;
+}
+
+.gridprice span {
+    color: #1178B2;
+    font-weight: 600;
+}
+
+.price .gridprice .div .chto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.gridprice .div button {
+    background: linear-gradient(#016CA8, #61B5E4);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+    .price .gridprice {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .price .gridprice {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

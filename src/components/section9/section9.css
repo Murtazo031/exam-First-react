@@ -1,0 +1,44 @@
+.sec9 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.sec9 .sec9h2 {
+    color: #1178B2;
+    font-size: 2em;
+}
+
+.gridsec9 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.gridsec9 div {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.166);
+}
+
+.gridsec9 div h1 {
+    font-size: 64px;
+    color: #1178B280;
+}
+
+@media (max-width: 1024px) {
+    .gridsec9 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gridsec9 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

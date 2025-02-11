@@ -1,0 +1,21 @@
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+}
+.h2 {
+    color: #1178B2;
+    font-size: 32px;
+    padding: 3vh 0vh;
+    padding-left: 14%;
+    
+}
+@media (max-width: 710px) {
+    .section1 {
+        flex-direction: column-reverse;
+    }
+    .section11 {
+        flex-direction: column;
+    }
+}
